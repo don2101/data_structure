@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/student/CLionProjects/APS/ArrayList.cpp
+ArrayList.h
+C:/Users/student/CLionProjects/APS/ArrayList.h
+
+C:/Users/student/CLionProjects/APS/ArrayList.h
+cstdio
+-
+
+C:/Users/student/CLionProjects/APS/main.cpp
+iostream
+-
+ArrayList.h
+C:/Users/student/CLionProjects/APS/ArrayList.h
+
