@@ -16,8 +16,12 @@ private:
 public:
     Dnode(int data);
     ~Dnode();
-
-
+    int getData();
+    void setData(int data);
+    Dnode* getNext();
+    void setNext();
+    Dnode* getPrev();
+    void setPrev();
 };
 
 #endif //APS_DLISTNODE_H
