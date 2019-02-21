@@ -8,7 +8,16 @@
 #include <cstdio>
 
 class Dnode {
-    
+private:
+    int data;
+    Dnode *prev;
+    Dnode *next;
+
+public:
+    Dnode(int data);
+    ~Dnode();
+
+
 };
 
 #endif //APS_DLISTNODE_H
