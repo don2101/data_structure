@@ -19,9 +19,9 @@ public:
     int getData();
     void setData(int data);
     Dnode* getNext();
-    void setNext();
+    void setNext(Dnode* node);
     Dnode* getPrev();
-    void setPrev();
+    void setPrev(Dnode* node);
 };
 
 #endif //APS_DLISTNODE_H
