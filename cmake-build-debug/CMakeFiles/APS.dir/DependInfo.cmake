@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/student/CLionProjects/APS/ArrayList.cpp" "C:/Users/student/CLionProjects/APS/cmake-build-debug/CMakeFiles/APS.dir/ArrayList.cpp.obj"
+  "C:/Users/student/CLionProjects/APS/List.cpp" "C:/Users/student/CLionProjects/APS/cmake-build-debug/CMakeFiles/APS.dir/List.cpp.obj"
   "C:/Users/student/CLionProjects/APS/Sort.cpp" "C:/Users/student/CLionProjects/APS/cmake-build-debug/CMakeFiles/APS.dir/Sort.cpp.obj"
+  "C:/Users/student/CLionProjects/APS/listNode.cpp" "C:/Users/student/CLionProjects/APS/cmake-build-debug/CMakeFiles/APS.dir/listNode.cpp.obj"
   "C:/Users/student/CLionProjects/APS/main.cpp" "C:/Users/student/CLionProjects/APS/cmake-build-debug/CMakeFiles/APS.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

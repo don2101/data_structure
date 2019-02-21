@@ -82,36 +82,51 @@ CMakeFiles/APS.dir/Sort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APS.dir/Sort.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\student\CLionProjects\APS\Sort.cpp -o CMakeFiles\APS.dir\Sort.cpp.s
 
-CMakeFiles/APS.dir/ArrayList.cpp.obj: CMakeFiles/APS.dir/flags.make
-CMakeFiles/APS.dir/ArrayList.cpp.obj: ../ArrayList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\student\CLionProjects\APS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/APS.dir/ArrayList.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\APS.dir\ArrayList.cpp.obj -c C:\Users\student\CLionProjects\APS\ArrayList.cpp
+CMakeFiles/APS.dir/List.cpp.obj: CMakeFiles/APS.dir/flags.make
+CMakeFiles/APS.dir/List.cpp.obj: ../List.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\student\CLionProjects\APS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/APS.dir/List.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\APS.dir\List.cpp.obj -c C:\Users\student\CLionProjects\APS\List.cpp
 
-CMakeFiles/APS.dir/ArrayList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APS.dir/ArrayList.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\student\CLionProjects\APS\ArrayList.cpp > CMakeFiles\APS.dir\ArrayList.cpp.i
+CMakeFiles/APS.dir/List.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APS.dir/List.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\student\CLionProjects\APS\List.cpp > CMakeFiles\APS.dir\List.cpp.i
 
-CMakeFiles/APS.dir/ArrayList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APS.dir/ArrayList.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\student\CLionProjects\APS\ArrayList.cpp -o CMakeFiles\APS.dir\ArrayList.cpp.s
+CMakeFiles/APS.dir/List.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APS.dir/List.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\student\CLionProjects\APS\List.cpp -o CMakeFiles\APS.dir\List.cpp.s
+
+CMakeFiles/APS.dir/listNode.cpp.obj: CMakeFiles/APS.dir/flags.make
+CMakeFiles/APS.dir/listNode.cpp.obj: ../listNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\student\CLionProjects\APS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/APS.dir/listNode.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\APS.dir\listNode.cpp.obj -c C:\Users\student\CLionProjects\APS\listNode.cpp
+
+CMakeFiles/APS.dir/listNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APS.dir/listNode.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\student\CLionProjects\APS\listNode.cpp > CMakeFiles\APS.dir\listNode.cpp.i
+
+CMakeFiles/APS.dir/listNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APS.dir/listNode.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\student\CLionProjects\APS\listNode.cpp -o CMakeFiles\APS.dir\listNode.cpp.s
 
 # Object files for target APS
 APS_OBJECTS = \
 "CMakeFiles/APS.dir/main.cpp.obj" \
 "CMakeFiles/APS.dir/Sort.cpp.obj" \
-"CMakeFiles/APS.dir/ArrayList.cpp.obj"
+"CMakeFiles/APS.dir/List.cpp.obj" \
+"CMakeFiles/APS.dir/listNode.cpp.obj"
 
 # External object files for target APS
 APS_EXTERNAL_OBJECTS =
 
 APS.exe: CMakeFiles/APS.dir/main.cpp.obj
 APS.exe: CMakeFiles/APS.dir/Sort.cpp.obj
-APS.exe: CMakeFiles/APS.dir/ArrayList.cpp.obj
+APS.exe: CMakeFiles/APS.dir/List.cpp.obj
+APS.exe: CMakeFiles/APS.dir/listNode.cpp.obj
 APS.exe: CMakeFiles/APS.dir/build.make
 APS.exe: CMakeFiles/APS.dir/linklibs.rsp
 APS.exe: CMakeFiles/APS.dir/objects1.rsp
 APS.exe: CMakeFiles/APS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\student\CLionProjects\APS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable APS.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\student\CLionProjects\APS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable APS.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\APS.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

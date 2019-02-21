@@ -82,13 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/student/CLionProjects/APS/ArrayList.cpp">
+		<Unit filename="C:/Users/student/CLionProjects/APS/List.cpp">
 			<Option target="APS"/>
 		</Unit>
-		<Unit filename="C:/Users/student/CLionProjects/APS/ArrayList.h">
+		<Unit filename="C:/Users/student/CLionProjects/APS/List.h">
 			<Option target="APS"/>
 		</Unit>
 		<Unit filename="C:/Users/student/CLionProjects/APS/Sort.cpp">
+			<Option target="APS"/>
+		</Unit>
+		<Unit filename="C:/Users/student/CLionProjects/APS/listNode.cpp">
+			<Option target="APS"/>
+		</Unit>
+		<Unit filename="C:/Users/student/CLionProjects/APS/listNode.h">
 			<Option target="APS"/>
 		</Unit>
 		<Unit filename="C:/Users/student/CLionProjects/APS/main.cpp">

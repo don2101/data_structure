@@ -122,32 +122,32 @@ APS/fast:
 	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/build
 .PHONY : APS/fast
 
-ArrayList.obj: ArrayList.cpp.obj
+List.obj: List.cpp.obj
 
-.PHONY : ArrayList.obj
+.PHONY : List.obj
 
 # target to build an object file
-ArrayList.cpp.obj:
-	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/ArrayList.cpp.obj
-.PHONY : ArrayList.cpp.obj
+List.cpp.obj:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/List.cpp.obj
+.PHONY : List.cpp.obj
 
-ArrayList.i: ArrayList.cpp.i
+List.i: List.cpp.i
 
-.PHONY : ArrayList.i
+.PHONY : List.i
 
 # target to preprocess a source file
-ArrayList.cpp.i:
-	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/ArrayList.cpp.i
-.PHONY : ArrayList.cpp.i
+List.cpp.i:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/List.cpp.i
+.PHONY : List.cpp.i
 
-ArrayList.s: ArrayList.cpp.s
+List.s: List.cpp.s
 
-.PHONY : ArrayList.s
+.PHONY : List.s
 
 # target to generate assembly for a file
-ArrayList.cpp.s:
-	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/ArrayList.cpp.s
-.PHONY : ArrayList.cpp.s
+List.cpp.s:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/List.cpp.s
+.PHONY : List.cpp.s
 
 Sort.obj: Sort.cpp.obj
 
@@ -175,6 +175,33 @@ Sort.s: Sort.cpp.s
 Sort.cpp.s:
 	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/Sort.cpp.s
 .PHONY : Sort.cpp.s
+
+listNode.obj: listNode.cpp.obj
+
+.PHONY : listNode.obj
+
+# target to build an object file
+listNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/listNode.cpp.obj
+.PHONY : listNode.cpp.obj
+
+listNode.i: listNode.cpp.i
+
+.PHONY : listNode.i
+
+# target to preprocess a source file
+listNode.cpp.i:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/listNode.cpp.i
+.PHONY : listNode.cpp.i
+
+listNode.s: listNode.cpp.s
+
+.PHONY : listNode.s
+
+# target to generate assembly for a file
+listNode.cpp.s:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/listNode.cpp.s
+.PHONY : listNode.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -212,12 +239,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... APS
 	@echo ... edit_cache
-	@echo ... ArrayList.obj
-	@echo ... ArrayList.i
-	@echo ... ArrayList.s
+	@echo ... List.obj
+	@echo ... List.i
+	@echo ... List.s
 	@echo ... Sort.obj
 	@echo ... Sort.i
 	@echo ... Sort.s
+	@echo ... listNode.obj
+	@echo ... listNode.i
+	@echo ... listNode.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

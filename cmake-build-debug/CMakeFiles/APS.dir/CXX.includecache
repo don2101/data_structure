@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/student/CLionProjects/APS/ArrayList.cpp
-ArrayList.h
-C:/Users/student/CLionProjects/APS/ArrayList.h
+C:/Users/student/CLionProjects/APS/List.h
+cstdio
+-
+listNode.h
+C:/Users/student/CLionProjects/APS/listNode.h
 
-C:/Users/student/CLionProjects/APS/ArrayList.h
+C:/Users/student/CLionProjects/APS/listNode.h
 cstdio
 -
 
 C:/Users/student/CLionProjects/APS/main.cpp
 iostream
 -
-ArrayList.h
-C:/Users/student/CLionProjects/APS/ArrayList.h
+List.h
+C:/Users/student/CLionProjects/APS/List.h
 

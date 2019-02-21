@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/APS.dir/main.cpp.obj"
   "CMakeFiles/APS.dir/Sort.cpp.obj"
-  "CMakeFiles/APS.dir/ArrayList.cpp.obj"
+  "CMakeFiles/APS.dir/List.cpp.obj"
+  "CMakeFiles/APS.dir/listNode.cpp.obj"
   "APS.pdb"
   "APS.exe"
   "APS.exe.manifest"
