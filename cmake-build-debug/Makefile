@@ -176,6 +176,33 @@ Sort.cpp.s:
 	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/Sort.cpp.s
 .PHONY : Sort.cpp.s
 
+dListNode.obj: dListNode.cpp.obj
+
+.PHONY : dListNode.obj
+
+# target to build an object file
+dListNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/dListNode.cpp.obj
+.PHONY : dListNode.cpp.obj
+
+dListNode.i: dListNode.cpp.i
+
+.PHONY : dListNode.i
+
+# target to preprocess a source file
+dListNode.cpp.i:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/dListNode.cpp.i
+.PHONY : dListNode.cpp.i
+
+dListNode.s: dListNode.cpp.s
+
+.PHONY : dListNode.s
+
+# target to generate assembly for a file
+dListNode.cpp.s:
+	$(MAKE) -f CMakeFiles\APS.dir\build.make CMakeFiles/APS.dir/dListNode.cpp.s
+.PHONY : dListNode.cpp.s
+
 listNode.obj: listNode.cpp.obj
 
 .PHONY : listNode.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... Sort.obj
 	@echo ... Sort.i
 	@echo ... Sort.s
+	@echo ... dListNode.obj
+	@echo ... dListNode.i
+	@echo ... dListNode.s
 	@echo ... listNode.obj
 	@echo ... listNode.i
 	@echo ... listNode.s

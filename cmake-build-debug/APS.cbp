@@ -91,6 +91,12 @@
 		<Unit filename="C:/Users/student/CLionProjects/APS/Sort.cpp">
 			<Option target="APS"/>
 		</Unit>
+		<Unit filename="C:/Users/student/CLionProjects/APS/dListNode.cpp">
+			<Option target="APS"/>
+		</Unit>
+		<Unit filename="C:/Users/student/CLionProjects/APS/dListNode.h">
+			<Option target="APS"/>
+		</Unit>
 		<Unit filename="C:/Users/student/CLionProjects/APS/listNode.cpp">
 			<Option target="APS"/>
 		</Unit>
