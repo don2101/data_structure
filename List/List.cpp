@@ -222,3 +222,111 @@ bool LinkedList::isEmpty() {
     return false;
 }
 /************** Linked List **************/
+
+
+/************** Doubly List **************/
+DoublyList::DoublyList() {
+    head = new Dnode(-1);
+    tail = new Dnode(-1);
+    head->setNext(tail);
+    tail->setPrev(head);
+
+    size = 0;
+}
+
+DoublyList::~DoublyList() {
+    Dnode *dnode = head;
+
+    while(head->getNext() != tail) {
+        dnode = head->getNext();
+        head->setNext(dnode->getNext());
+
+        delete dnode;
+    }
+}
+
+bool DoublyList::isEmpty() {
+    if(size == 0) return true;
+    return false;
+}
+
+void DoublyList::insertFront(int number) {
+    Dnode *newNode = new Dnode(number);
+
+    newNode->setNext(head->getNext());
+    newNode->setPrev(head);
+    head->getNext()->setPrev(newNode);
+    head->setNext(newNode);
+    this->size++;
+}
+
+void DoublyList::insertBack(int number) {
+    Dnode *newNode = new Dnode(number);
+
+    newNode->setPrev(tail->getPrev());
+    newNode->setNext(tail);
+    tail->getPrev()->setNext(newNode);
+    tail->setPrev(newNode);
+    this->size++;
+}
+
+int DoublyList::deleteFront() {
+    if(isEmpty()) {
+        printf("List is empty\n");
+        return -1;
+    }
+
+    Dnode *delNode = head->getNext();
+    int ret = delNode->getData();
+
+    delNode->getNext()->setPrev(head);
+    head->setNext(delNode->getNext());
+    delNode->setNext(NULL);
+    delNode->setPrev(NULL);
+
+    delete delNode;
+    size--;
+
+    return ret;
+}
+
+int DoublyList::deleteBack() {
+    if(isEmpty()) {
+        printf("List is empty\n");
+        return -1;
+    }
+
+    Dnode *delNode = tail->getPrev();
+    int ret = delNode->getData();
+
+    delNode->getPrev()->setNext(tail);
+    tail->setPrev(delNode->getPrev());
+    delNode->setNext(NULL);
+    delNode->setPrev(NULL);
+
+    delete delNode;
+    size--;
+
+    return ret;
+}
+
+int DoublyList::peekFront() {
+    if(isEmpty()) {
+        printf("List is empty\n");
+        return -1;
+    }
+
+    return head->getNext()->getData();
+}
+
+int DoublyList::peekBack() {
+    if(isEmpty()) {
+        printf("List is empty\n");
+        return -1;
+    }
+
+    return tail->getPrev()->getData();
+}
+
+/************** Doubly List **************/
+

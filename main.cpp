@@ -1,5 +1,5 @@
 #include <iostream>
-#include "List.h"
+#include "List/List.h"
 
 using namespace std;
 
@@ -39,41 +39,67 @@ int main(void) {
 //    printf("\n");
     /************** Array List **************/
 
+    /************** Linked List **************/
+//    LinkedList *linkedList = new LinkedList();
+//
+//    linkedList->insert(1);
+//    linkedList->insert(2);
+//    linkedList->insert(3);
+//    linkedList->insert(4);
+//    linkedList->insert(5);
+//    linkedList->insert(111, 2);
+//    linkedList->insert(6);
+//    linkedList->insert(7);
+//    linkedList->insert(8);
+//    linkedList->insert(9);
+//    linkedList->insert(10);
+//    linkedList->insert(222, 7);
+//
+//
+//    for(int i = 0; i < 12; ++i) {
+//        printf("%d ", linkedList->peek(i));
+//    }
+//
+//    printf("\n");
+//
+//
+//    linkedList->deleteItem(2);
+//
+//    linkedList->deleteItem(6);
+//    linkedList->deleteItem();
+//
+//    for(int i = 0; i < 9; ++i) {
+//        printf("%d ", linkedList->peek(i));
+//    }
 
     /************** Linked List **************/
-    LinkedList *linkedList = new LinkedList();
 
-    linkedList->insert(1);
-    linkedList->insert(2);
-    linkedList->insert(3);
-    linkedList->insert(4);
-    linkedList->insert(5);
-    linkedList->insert(111, 2);
-    linkedList->insert(6);
-    linkedList->insert(7);
-    linkedList->insert(8);
-    linkedList->insert(9);
-    linkedList->insert(10);
-    linkedList->insert(222, 7);
+    /************** Doubly Linked List **************/
+    DoublyList *doublyList = new DoublyList();
 
+    doublyList->insertFront(1);
+    doublyList->insertFront(2);
+    doublyList->insertFront(3);
+    doublyList->insertFront(4);
+    doublyList->insertFront(5);
+    doublyList->insertBack(6);
+    doublyList->insertBack(7);
+    doublyList->insertBack(8);
+    doublyList->insertBack(9);
+    doublyList->insertBack(10);
 
-    for(int i = 0; i < 12; ++i) {
-        printf("%d ", linkedList->peek(i));
+    for(int i = 0; i < 5; ++i) {
+        printf("%d ", doublyList->deleteFront());
     }
-
     printf("\n");
 
-
-    linkedList->deleteItem(2);
-
-    linkedList->deleteItem(6);
-    linkedList->deleteItem();
-
-    for(int i = 0; i < 9; ++i) {
-        printf("%d ", linkedList->peek(i));
+    for(int i = 0; i < 5; ++i) {
+        printf("%d ", doublyList->deleteBack());
     }
 
-    /************** Linked List **************/
+
+    /************** Doubly Linked List **************/
+
 
     return 0;
 }

@@ -7,6 +7,7 @@
 
 #include <cstdio>
 #include "listNode.h"
+#include "dListNode.h"
 
 class ArrayList {
 private :
@@ -42,5 +43,23 @@ public:
     bool isEmpty();
 };
 
+class DoublyList {
+private:
+    Dnode* head;
+    Dnode* tail;
+    int size;
+
+public:
+    DoublyList();
+    ~DoublyList();
+
+    void insertFront(int number);
+    void insertBack(int number);
+    int deleteFront();
+    int deleteBack();
+    int peekFront();
+    int peekBack();
+    bool isEmpty();
+};
 
 #endif //APS_ARRAYLIST_H
