@@ -1,10 +1,10 @@
 #include <iostream>
 #include "List/List.h"
+#include "Stack/Stack.h"
 
 using namespace std;
 
-int main(void) {
-
+void test_ArrayList() {
     /************** Array List **************/
 //    ArrayList *arrayList = new ArrayList(5);
 //
@@ -38,7 +38,9 @@ int main(void) {
 //    }
 //    printf("\n");
     /************** Array List **************/
+}
 
+void test_LinkedList() {
     /************** Linked List **************/
 //    LinkedList *linkedList = new LinkedList();
 //
@@ -73,33 +75,67 @@ int main(void) {
 //    }
 
     /************** Linked List **************/
+}
 
-    /************** Doubly Linked List **************/
-    DoublyList *doublyList = new DoublyList();
-
-    doublyList->insertFront(1);
-    doublyList->insertFront(2);
-    doublyList->insertFront(3);
-    doublyList->insertFront(4);
-    doublyList->insertFront(5);
-    doublyList->insertBack(6);
-    doublyList->insertBack(7);
-    doublyList->insertBack(8);
-    doublyList->insertBack(9);
-    doublyList->insertBack(10);
-
-    for(int i = 0; i < 5; ++i) {
-        printf("%d ", doublyList->deleteFront());
-    }
-    printf("\n");
-
-    for(int i = 0; i < 5; ++i) {
-        printf("%d ", doublyList->deleteBack());
-    }
-
-
+void test_DoublyLinkedList() {
     /************** Doubly Linked List **************/
 
+    //    DoublyList *doublyList = new DoublyList();
+//
+//    doublyList->insertFront(1);
+//    doublyList->insertFront(2);
+//    doublyList->insertFront(3);
+//    doublyList->insertFront(4);
+//    doublyList->insertFront(5);
+//    doublyList->insertBack(6);
+//    doublyList->insertBack(7);
+//    doublyList->insertBack(8);
+//    doublyList->insertBack(9);
+//    doublyList->insertBack(10);
+//
+//    for(int i = 0; i < 5; ++i) {
+//        printf("%d ", doublyList->deleteFront());
+//    }
+//    printf("\n");
+//
+//    for(int i = 0; i < 5; ++i) {
+//        printf("%d ", doublyList->deleteBack());
+//    }
+//
+    /************** Doubly Linked List **************/
+}
+
+void test_ArrayStack() {
+    /************** Array Stack **************/
+
+//    ArrayStack *arrayStack = new ArrayStack();
+//
+//    arrayStack->push(1);
+//    arrayStack->push(2);
+//    arrayStack->push(3);
+//    arrayStack->push(4);
+//    arrayStack->push(5);
+//    arrayStack->push(6);
+//    arrayStack->push(7);
+//    arrayStack->push(8);
+//    arrayStack->push(9);
+//    arrayStack->push(10);
+//    arrayStack->push(11);
+//    arrayStack->push(12);
+//
+//    printf("%d ", arrayStack->peek());
+//    printf("%d ", arrayStack->peek());
+//    printf("%d ", arrayStack->pop());
+//    printf("%d ", arrayStack->pop());
+//    printf("%d ", arrayStack->pop());
+//    printf("%d ", arrayStack->pop());
+//    printf("%d ", arrayStack->pop());
+
+    /************** Array Stack **************/
+}
+
+int main(void) {
+    test_ArrayStack();
 
     return 0;
 }
