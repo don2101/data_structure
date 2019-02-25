@@ -1,6 +1,7 @@
 #include <iostream>
 #include "List/List.h"
 #include "Stack/Stack.h"
+#include "Queue/Queue.h"
 
 using namespace std;
 
@@ -134,8 +135,65 @@ void test_ArrayStack() {
     /************** Array Stack **************/
 }
 
+void test_ArrayQueue() {
+//    ArrayQueue *arrayQueue = new ArrayQueue(6);
+//
+//    arrayQueue->enqueue(1);
+//    arrayQueue->enqueue(2);
+//    arrayQueue->enqueue(3);
+//    arrayQueue->enqueue(4);
+//    arrayQueue->enqueue(5);
+//    arrayQueue->enqueue(6);
+//    arrayQueue->enqueue(7);
+//
+//    printf("%d ", arrayQueue->dequeue());
+//    printf("%d ", arrayQueue->dequeue());
+//    printf("%d ", arrayQueue->dequeue());
+//    printf("%d ", arrayQueue->dequeue());
+//    printf("%d ", arrayQueue->dequeue());
+}
+
+void test_LinkedQueue() {
+//    LinkedQueue *linkedQueue = new LinkedQueue();
+//
+//    linkedQueue->enqueue(1);
+//    linkedQueue->enqueue(2);
+//    linkedQueue->enqueue(3);
+//    linkedQueue->enqueue(4);
+//    linkedQueue->enqueue(5);
+//
+//    printf("%d ", linkedQueue->dequeue());
+//    printf("%d ", linkedQueue->dequeue());
+//    printf("%d ", linkedQueue->dequeue());
+//    printf("%d ", linkedQueue->dequeue());
+//    printf("%d ", linkedQueue->dequeue());
+//    printf("%d ", linkedQueue->dequeue());
+//    printf("%d ", linkedQueue->dequeue());
+}
+
+void test_PriorityQueue() {
+    PriorityQueue *priorityQueue = new PriorityQueue();
+
+    priorityQueue->enqueue(8);
+    priorityQueue->enqueue(6);
+    priorityQueue->enqueue(4);
+    priorityQueue->enqueue(2);
+    priorityQueue->enqueue(7);
+    priorityQueue->enqueue(4);
+    priorityQueue->enqueue(5);
+    priorityQueue->enqueue(1);
+    priorityQueue->enqueue(3);
+    priorityQueue->enqueue(9);
+    priorityQueue->enqueue(3);
+    priorityQueue->enqueue(4);
+
+    while(!priorityQueue->isEmpty()) {
+        printf("%d ", priorityQueue->dequeue());
+    }
+}
+
 int main(void) {
-    test_ArrayStack();
+    test_PriorityQueue();
 
     return 0;
 }
