@@ -35,6 +35,8 @@ public:
     LinkedList();
     ~LinkedList();
 
+    void insertFirst(int number);
+    void insertLast(int number);
     void insert(int number);
     void insert(int number, int position);
     int deleteItem(int position);

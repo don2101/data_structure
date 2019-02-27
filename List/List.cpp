@@ -109,6 +109,29 @@ LinkedList::~LinkedList() {
     delete head;
 }
 
+void LinkedList::insertFirst(int number) {
+    Node *newNode = new Node(number);
+
+    if(!isEmpty()) {
+        newNode->setNext(head->getNext());
+    }
+
+    head->setNext(newNode);
+    this->size++;
+}
+
+void LinkedList::insertLast(int number) {
+    Node *newNode = new Node(number);
+
+    Node *searchNode = head;
+    while(searchNode->getNext() != NULL) {
+        searchNode = searchNode->getNext();
+    }
+
+    searchNode->setNext(newNode);
+    this->size++;
+}
+
 void LinkedList::insert(int number) {
     Node *newNode = new Node(number);
     newNode->setNext(NULL);
