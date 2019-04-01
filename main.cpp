@@ -4,6 +4,7 @@
 #include "Queue/Queue.h"
 #include "Sort/Sort.h"
 #include "Graph/Graph.h"
+#include "DisjointSet/DisjointSet.h"
 
 using namespace std;
 
@@ -321,9 +322,101 @@ void test_bfs() {
     bfs_iterative(graph, visited, 0, 10);
 }
 
+void test_dijkstra() {
+    int **graph = new int*[6];
+
+    for(int i = 0; i < 6; ++i) {
+        graph[i] = new int[6];
+    }
+
+    for(int i = 0; i < 6; ++i) {
+        for(int j = 0; j < 6; ++j) {
+            graph[i][j] = 0;
+        }
+    }
+
+    graph[0][1] = 3;
+    graph[0][2] = 5;
+    graph[1][2] = 2;
+    graph[1][3] = 5;
+    graph[2][1] = 1;
+    graph[2][3] = 3;
+    graph[2][4] = 5;
+    graph[3][4] = 3;
+    graph[3][5] = 4;
+    graph[4][0] = 2;
+    graph[4][5] = 5;
+
+    dijkstra(graph, 0, 5, 6);
+}
+
+void test_floyd_warshall() {
+    int **graph = new int*[5];
+
+    for(int i = 0; i < 5; ++i) {
+        graph[i] = new int[5];
+    }
+
+    for(int i = 0; i < 5; ++i) {
+        for(int j = 0; j < 5; ++j) {
+            graph[i][j] = 999;
+        }
+    }
+
+    graph[0][0] = 0;
+    graph[0][1] = 4;
+    graph[0][2] = 2;
+    graph[0][3] = 5;
+    graph[1][1] = 0;
+    graph[1][2] = 1;
+    graph[1][4] = 4;
+    graph[2][0] = 1;
+    graph[2][1] = 3;
+    graph[2][2] = 0;
+    graph[2][3] = 1;
+    graph[2][4] = 2;
+    graph[3][0] = -2;
+    graph[3][3] = 0;
+    graph[3][4] = 2;
+    graph[4][1] = -1;
+    graph[4][2] = 3;
+    graph[4][3] = 1;
+    graph[4][4] = 0;
+
+    floyd_warshall(graph, 5);
+}
+
+void test_disjoint_set() {
+    int *p = new int[10];
+
+    for(int i = 0; i < 10; ++i) {
+        makeSet(p, i);
+    }
+
+    printf("Before disjoint:\n");
+    for (int i = 0; i < 10; ++i) {
+        printf("%d ", p[i]);
+    }
+
+    unionSet(p, 0, 2);
+    unionSet(p, 0, 4);
+    unionSet(p, 0, 6);
+    unionSet(p, 0, 8);
+    unionSet(p, 1, 3);
+    unionSet(p, 1, 5);
+    unionSet(p, 1, 7);
+    unionSet(p, 1, 9);
+
+    printf("After disjoint:\n");
+    for (int i = 0; i < 10; ++i) {
+        printf("%d ", p[i]);
+    }
+
+}
+
 
 int main(void) {
-    test_bfs();
+    test_disjoint_set();
 
     return 0;
 }
