@@ -3,6 +3,7 @@
 #include "Stack/Stack.h"
 #include "Queue/Queue.h"
 #include "Sort/Sort.h"
+#include "Graph/Graph.h"
 
 using namespace std;
 
@@ -193,7 +194,6 @@ void test_PriorityQueue() {
     }
 }
 
-
 void test_mergeSort() {
     int array[9] = {69, 10, 30, 2, 16, 8, 31, 22, -1};
     int *newArray;
@@ -205,8 +205,125 @@ void test_mergeSort() {
 
 }
 
+void test_dfs() {
+    int **graph = new int*[10];
+
+    for(int i = 0; i < 10; ++i) {
+        graph[i] = new int[10];
+    }
+
+    for(int i = 0; i < 10; ++i) {
+        for(int j = 0; j < 10; ++j) {
+            graph[i][j] = 0;
+        }
+    }
+
+    graph[0][1] = 1;
+    graph[0][5] = 1;
+    graph[1][3] = 1;
+    graph[1][4] = 1;
+    graph[2][7] = 1;
+    graph[2][8] = 1;
+    graph[2][3] = 1;
+    graph[2][5] = 1;
+    graph[3][9] = 1;
+    graph[3][5] = 1;
+    graph[4][5] = 1;
+    graph[4][7] = 1;
+    graph[5][3] = 1;
+    graph[5][6] = 1;
+    graph[5][2] = 1;
+    graph[6][7] = 1;
+    graph[6][8] = 1;
+    graph[6][9] = 1;
+    graph[7][0] = 1;
+    graph[7][1] = 1;
+    graph[7][3] = 1;
+    graph[8][7] = 1;
+    graph[8][3] = 1;
+    graph[9][2] = 1;
+    graph[9][3] = 1;
+
+    for(int i = 0; i < 10; ++i) {
+        for(int j = 0; j < 10; ++j) {
+            if(graph[i][j]) {
+                graph[j][i] = 1;
+            }
+        }
+    }
+
+    bool *visited = new bool[10];
+    for(int i = 0; i < 10; ++i) {
+        visited[i] = false;
+    }
+
+    dfs_iterative(graph, 0, 10);
+    printf("\n");
+    for(int i = 0; i < 10; ++i) {
+        visited[i] = false;
+    }
+    dfs_recursive(graph, visited, 0, 10);
+    printf("\n");
+}
+
+void test_bfs() {
+    int **graph = new int*[10];
+
+    for(int i = 0; i < 10; ++i) {
+        graph[i] = new int[10];
+    }
+
+    for(int i = 0; i < 10; ++i) {
+        for(int j = 0; j < 10; ++j) {
+            graph[i][j] = 0;
+        }
+    }
+
+    graph[0][1] = 1;
+    graph[0][5] = 1;
+    graph[1][3] = 1;
+    graph[1][4] = 1;
+    graph[2][7] = 1;
+    graph[2][8] = 1;
+    graph[2][3] = 1;
+    graph[2][5] = 1;
+    graph[3][9] = 1;
+    graph[3][5] = 1;
+    graph[4][5] = 1;
+    graph[4][7] = 1;
+    graph[5][3] = 1;
+    graph[5][6] = 1;
+    graph[5][2] = 1;
+    graph[6][7] = 1;
+    graph[6][8] = 1;
+    graph[6][9] = 1;
+    graph[7][0] = 1;
+    graph[7][1] = 1;
+    graph[7][3] = 1;
+    graph[8][7] = 1;
+    graph[8][3] = 1;
+    graph[9][2] = 1;
+    graph[9][3] = 1;
+
+    for(int i = 0; i < 10; ++i) {
+        for(int j = 0; j < 10; ++j) {
+            if(graph[i][j]) {
+                graph[j][i] = 1;
+            }
+        }
+    }
+
+    bool *visited = new bool[10];
+    for(int i = 0; i < 10; ++i) {
+        visited[i] = false;
+    }
+
+    bfs_iterative(graph, visited, 0, 10);
+}
+
+
 int main(void) {
-    test_PriorityQueue();
+    test_bfs();
 
     return 0;
 }
